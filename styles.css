@@ -7,10 +7,25 @@ body {
     margin: 0;
 }
 
+button {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 32px;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
 }
 
 .header a {
@@ -25,26 +40,33 @@ body {
     padding: 0;
 }
 
+.hdLinks,
+.heroSecondary {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
 .header,
-.hero {
+.hero,
+.footer {
     background-color: #1f2937;
     color: #f9faf8;
 }
 
 .hero {
-
     display: flex;
     justify-content: center;
 }
 
-.container {
-
+.heroMain {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .widthSet {
     max-width: 60vw;
 }
-
 
 .centering {
     display: flex;
@@ -54,7 +76,7 @@ body {
     gap: 32px;
 }
 
-.right img {;
+.right img {
     max-width: 25vw;
 }
 
@@ -62,7 +84,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 64px;
+    padding: 64px;
+    color: #1f2937;
+}
+
+.midTitle {
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .imgContainer {
@@ -71,6 +99,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 60vw;
+    margin-bottom: 40px;
 }
 
 .imgBlock {
@@ -82,21 +111,8 @@ body {
 }
 
 .imgBlock img {
-    border: blue 2px solid;
+    border: #3882f6 2px solid;
     border-radius: 30px;
-}
-
-.ctaHighlight {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 72px;
 }
 
 .qoute {
@@ -111,14 +127,59 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    color: #1f2937;
+    margin: 56px;
 }
 
 .qText {
     font-style: italic;
     font-size: 36px;
-    color: #1f2937;
+    font-weight: lighter;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 60vw;
+    margin: 0;
+}
+
+.qPers {
+    text-align: right;
+    width: 60vw;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.cta {
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctaHighlight {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 50vw;
+    flex: 1;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    padding: 56px;
+    border-radius: 10px;
+}
+
+.ctaHighlight button {
+    border: #e5e7eb 2px solid;
+}
+
+h3 {
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
 }
